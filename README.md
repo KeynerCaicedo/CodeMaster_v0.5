@@ -8,33 +8,25 @@ Estado actual del proyecto
 -- Versión v0.5 (en desarrollo) --
 
 🔹 Se ha estructurado el proyecto en módulos principales:
+
 Frontend → interfaz visual (HTML, CSS, JS o framework correspondiente).
+
 Backend → API construida en Python (posiblemente con FastAPI o Flask).
+
 Tests → pruebas unitarias y funcionales.
+
 🔹 Se está implementando la conexión con PostgreSQL para:
+
 Guardar usuarios registrados.
+
 Persistir el historial de chats.
+
 Manejar sesiones y autenticación de login.
+
 🔹 Uso de Docker para facilitar el despliegue (con Dockerfile y docker-compose.yml).
+
 🔹 Configuración de variables de entorno con .env (no incluidas por seguridad).
 
--- Estructura del proyecto --
-CODEMASTER_V0.5/
-│
-├── .github/                # Configuraciones de CI/CD o workflows (si aplica)
-├── backend/                # Lógica del servidor, controladores, modelos, etc.
-├── frontend/               # Interfaz visual o cliente web
-├── tests/                  # Pruebas automatizadas
-│
-├── .env.sample             # Ejemplo de variables de entorno
-├── .gitignore              # Archivos y carpetas ignoradas por Git
-├── alembic.ini             # Configuración de migraciones (si usas Alembic)
-├── docker-compose.yml      # Configuración multi-servicio (API + DB + frontend)
-├── Dockerfile              # Imagen del contenedor backend
-├── requirements.txt        # Dependencias del proyecto (Python)
-├── backend.log             # Log del servidor (ignorarse en Git)
-├── README.md               # Este archivo
-└── TESTS.md                # Documentación de las pruebas
 
 -- Requisitos previos --
 
@@ -86,7 +78,11 @@ http://localhost:8000
 -- Estructura futura (plan a implementar) --
 
 🔸 Integrar completamente el sistema de autenticación con PostgreSQL.
+
 🔸 Guardar y recuperar historiales de chat desde la base de datos.
+
 🔸 Añadir una interfaz web funcional para interactuar con el backend.
+
 🔸 Implementar migraciones automáticas con Alembic.
+
 🔸 Desplegar el proyecto en la nube (Railway, Render, o AWS).
