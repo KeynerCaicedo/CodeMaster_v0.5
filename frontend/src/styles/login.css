@@ -1,0 +1,224 @@
+.login-container {
+@apply flex h-screen;
+}
+
+.login-left {
+@apply w-1/2 relative hidden md:flex items-center justify-center bg-black/40;
+background: url("../assets/images/login-side.jpg") center/cover no-repeat;
+background-size: cover;
+}
+
+.login-right {
+@apply w-full md:w-1/2 flex flex-col justify-center items-center bg-black/30 p-8;
+
+}
+
+
+.login-card {
+@apply bg-white/10 p-8 rounded-2xl shadow-lg w-full max-w-md;
+}
+
+.login-title {
+@apply text-3xl font-semibold text-center text-indigo-400 mb-6;
+}
+
+
+.login-input {
+@apply w-full p-3 rounded-md bg-white/10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 mb-4;
+}
+
+.login-button {
+@apply w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3 rounded-md transition duration-300;
+}
+
+.login-footer {
+@apply text-sm text-gray-400 mt-4 text-center;
+}
+
+.login-footer a {
+@apply text-indigo-400 hover:underline;
+}
+
+/* Estilos divididos heredados */
+
+/* === CONTENEDOR PRINCIPAL === */
+.split-layout {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #0f172a, #1e1b4b);
+}
+
+/* === COLUMNA IZQUIERDA === */
+.split-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.split-left img {
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+/* === COLUMNA DERECHA === */
+.split-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* === FORMULARIO === */
+.login-form-container {
+  width: 80%;
+  max-width: 380px;
+  text-align: center;
+  color: white;
+}
+
+.login-form-container h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #818cf8;
+  margin-bottom: 0.5rem;
+}
+
+.login-form-container p {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  margin-bottom: 1.5rem;
+}
+
+.login-input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: background 0.3s;
+}
+
+.login-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.login-input:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  outline: 2px solid #6366f1;
+}
+
+/* === BOTÓN === */
+.login-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #6366f1;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #818cf8;
+}
+
+/* === PIE DEL FORMULARIO === */
+.login-footer {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #cbd5e1;
+}
+
+.login-footer a {
+  color: #818cf8;
+  text-decoration: none;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
+.split-left img {
+  border-radius: 1.25rem;
+  box-shadow: 0 0 25px rgba(79, 70, 229, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.split-left img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 40px rgba(99, 102, 241, 0.45);
+}
+
+.split-layout {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0f172a, #1e1b4b);
+}
+
+.split-layout::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 30%, rgba(79, 70, 229, 0.15), transparent 60%),
+              radial-gradient(circle at 80% 70%, rgba(236, 72, 153, 0.15), transparent 60%);
+  animation: floatGradient 10s ease-in-out infinite alternate;
+}
+
+@keyframes floatGradient {
+  from {
+    transform: translateX(-10px) translateY(-10px);
+  }
+  to {
+    transform: translateX(10px) translateY(10px);
+  }
+}
+
+.login-input {
+  width: 100%;
+  padding: 10px 14px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: #f1f5f9;
+  transition: all 0.25s ease;
+}
+
+.login-input:focus {
+  border-color: #818cf8;
+  box-shadow: 0 0 10px rgba(129, 140, 248, 0.4);
+  outline: none;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #6366f1;
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.6);
+}
+
+.text-red-400 {
+  color: #f87171;
+}

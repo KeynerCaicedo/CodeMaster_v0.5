@@ -1,0 +1,32 @@
+# --- Python ---
+.venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+.mypy_cache/
+pytest_cache/
+.coverage
+
+# --- Node / Frontend ---
+node_modules/
+dist/
+build/
+*.log
+
+# --- Env files ---
+.env
+.env.*
+!.env.sample
+
+# --- IDE / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Docker ---
+*.pid

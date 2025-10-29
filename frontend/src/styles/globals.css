@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./login.css";
+
+html,
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    @apply bg-gradient-to-br from-[#0f172a] to-[#1e1b4b] text-gray-100 font-sans;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("../assets/images/bg-blur-1.png") center/cover no-repeat;
+    filter: blur(40px) brightness(0.7);
+    z-index: -1;
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb{
+    @apply bg-indigo-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-indigo-500;
+}
+
+
