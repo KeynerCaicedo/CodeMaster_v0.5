@@ -83,7 +83,7 @@ Abre el navegador en:
 
 http://localhost:8000
 
-🧱 Estructura futura (plan a implementar)
+-- Estructura futura (plan a implementar) --
 
 🔸 Integrar completamente el sistema de autenticación con PostgreSQL.
 🔸 Guardar y recuperar historiales de chat desde la base de datos.
