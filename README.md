@@ -39,42 +39,6 @@ Node.js
 Un archivo .env basado en .env.sample
 
 
--- Variables de entorno --
-
-Ejemplo de configuración básica (.env.sample):
-DATABASE_URL=postgresql://user:password@localhost:5432/codemaster
-SECRET_KEY=your_secret_key
-DEBUG=True
-
--- Uso con Docker --
-
-Para levantar el entorno completo:
-docker-compose up --build
-
-
-Esto iniciará:
-El contenedor de backend (API Python)
-El contenedor de PostgreSQL
-(Opcional) El contenedor del frontend
-
--- Ejecución local (sin Docker) --
-
-Crea y activa un entorno virtual:
-
-python -m venv .venv
-source .venv/bin/activate   # Linux/Mac
-.venv\Scripts\activate      # Windows
-
-
-Instala dependencias:
-
-pip install -r requirements.txt
-Ejecuta el servidor backend:
-python backend/main.py
-Abre el navegador en:
-
-http://localhost:8000
-
 -- Estructura futura (plan a implementar) --
 
 🔸 Integrar completamente el sistema de autenticación con PostgreSQL.
